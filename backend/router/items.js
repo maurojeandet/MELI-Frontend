@@ -63,7 +63,7 @@ router.get("/categories/:id", async (req, res) => {
         const result = {
             categories: category.data.path_from_root.map(c => c.name)
         }
-        console.log(result);
+
         res.json(result);
     } catch (error) {
         if (error.response) {
