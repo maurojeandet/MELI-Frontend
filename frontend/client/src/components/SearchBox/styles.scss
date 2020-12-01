@@ -1,0 +1,46 @@
+@import "../../styles/variables";
+
+.search-bar {
+    background-color: $meli-yellow;
+    height: $search-bar-height;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar__meli-section {
+    padding: $search-meli-icon-padding;
+}
+
+.search-bar__meli-icon {
+    background-image: url("../../assets/Logo_ML.png");
+    background-size: $search-meli-icon-width $search-meli-icon-height;
+    width: $search-meli-icon-width;
+    height: $search-meli-icon-height;
+    display: block;
+}
+
+.search-input {
+    width: $search-input-width;
+    height: $search-input-height;
+    text-align: left;
+    margin: $search-input-margin;
+    padding: $search-input-padding;
+}
+
+.search-button {
+    margin: $search-icon-margin;
+    padding: $search-icon-padding;
+    position: absolute;
+}
+
+.search-button:hover {
+    cursor: pointer;
+}
+
+.search-button__icon {
+    background-image: url("../../assets/ic_Search.png");
+    background-size: $search-icon-width $search-icon-height;
+    width: $search-icon-width;
+    height: $search-icon-height;
+    display: block;
+}

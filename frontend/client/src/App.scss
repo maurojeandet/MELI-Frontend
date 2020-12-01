@@ -1,0 +1,93 @@
+@import './styles/shared';
+@import './styles/variables';
+@import './components/SearchBox/styles';
+@import './components/Item/styles';
+@import './components/ProductDetails/styles';
+@import './components/Breadcrump/style';
+
+.body-content {
+    padding: 0 15% 2rem;
+}
+
+.breadcrumb {
+    position: relative;
+    padding: 2rem 15% 0;
+    color: $meli-medium-gray;
+
+    &__anchor {
+        padding: 7px;
+    }
+}
+
+.total-view {
+    flex-direction: column;
+}
+
+.product-body {
+    display: inline-flex;
+    margin-top: 10px;
+
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    min-width: 680px;
+}
+
+
+.product-resume {
+    padding: $spacing-32;
+}
+
+.product-resume p small {
+    padding: 0 4px;
+}
+
+.product-title {
+    margin: $spacing-16 0 $spacing-32;
+    font-size: 24px;
+}
+
+.product-resume__h2 {
+    font-size: 46px;
+    margin: $spacing-32 0;
+}
+
+.product-resume__button {
+    font-size: 20px;
+    border-radius: 4px;
+    background: $meli-blue;
+    padding: 20px;
+    border: 0;
+    color: $meli-white;
+    width: 100%;
+}
+
+.description__h3 {
+    padding: $spacing-32;
+    font-size: 28px;
+
+}
+
+.description__p {
+    font-size: $spacing-16;
+    padding-bottom: $spacing-32;
+}
+
+.meli-breadcrum-list-item
+{
+
+    &:after {
+        content: "  > "
+    }
+    &:last-child:after {
+        content: '';
+    }
+}
+
+.h1__welcome {
+    margin-top: $spacing-64;
+}

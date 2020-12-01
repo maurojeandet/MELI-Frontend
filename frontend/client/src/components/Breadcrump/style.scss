@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+
+.breadcrumb { 
+    list-style: none; 
+    overflow: hidden;
+    font-size: small;
+}
+
+.breadcrumb li { 
+    float: left;
+}
+
+.breadcrumb li a {
+    color: $meli-white;
+    text-decoration: none;
+    position: relative; 
+    display: block;
+}
